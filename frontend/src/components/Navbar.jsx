@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -59,8 +59,10 @@ const Navbar = () => {
                 data-testid={`nav-${link.name.toLowerCase()}`}
                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                   isActive(link.path)
-                    ? "bg-emerald-950 text-white"
-                    : "text-emerald-900 hover:bg-emerald-50"
+                    ? "bg-emerald-950 text-white shadow-lg"
+                    : isScrolled 
+                      ? "text-emerald-900 hover:bg-emerald-100" 
+                      : "text-white/90 hover:text-white hover:bg-white/10"
                 }`}
               >
                 {link.name}
