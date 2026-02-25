@@ -86,12 +86,12 @@ const Navbar = () => {
           <button
             data-testid="mobile-menu-toggle"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-emerald-50 transition-colors"
+            className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'hover:bg-emerald-50' : 'hover:bg-white/10'}`}
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6 text-emerald-950" />
+              <X className={`w-6 h-6 ${isScrolled ? 'text-emerald-950' : 'text-white'}`} />
             ) : (
-              <Menu className="w-6 h-6 text-emerald-950" />
+              <Menu className={`w-6 h-6 ${isScrolled ? 'text-emerald-950' : 'text-white'}`} />
             )}
           </button>
         </div>
