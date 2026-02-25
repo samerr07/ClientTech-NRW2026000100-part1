@@ -1,0 +1,115 @@
+{
+  "identity": {
+    "name": "Renergizr Industries Private Limited",
+    "tone": "Professional, Sustainable, High-Tech, Trusted",
+    "aesthetic": "Clean Energy Future",
+    "archetype": "Organic & Earthy + Swiss Precision",
+    "theme_preference": "Light Mode with Deep Contrast Sections"
+  },
+  "typography": {
+    "font_family_heading": "Outfit, sans-serif",
+    "font_family_body": "Inter, sans-serif",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
+      "h2": "text-3xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+      "caption": "text-sm uppercase tracking-widest font-semibold text-primary/80"
+    },
+    "installation": "Import from Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;700;900&display=swap');"
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Deep Forest",
+        "hex": "#022c22",
+        "tailwind": "bg-emerald-950",
+        "usage": "Strong backgrounds, primary text, heavy emphasis"
+      },
+      "secondary": {
+        "name": "Electric Leaf",
+        "hex": "#10b981",
+        "tailwind": "bg-emerald-500",
+        "usage": "CTAs, highlights, active states"
+      },
+      "accent": {
+        "name": "Volt",
+        "hex": "#a3e635",
+        "tailwind": "bg-lime-400",
+        "usage": "Micro-interactions, energy pulses, gradients"
+      },
+      "background": {
+        "name": "Mist",
+        "hex": "#f8fafc",
+        "tailwind": "bg-slate-50",
+        "usage": "Main background"
+      },
+      "surface": {
+        "name": "Pure White",
+        "hex": "#ffffff",
+        "tailwind": "bg-white",
+        "usage": "Cards, panels, inputs"
+      }
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900",
+      "card_hover": "hover:bg-gradient-to-tr hover:from-white hover:to-emerald-50/50"
+    }
+  },
+  "layout_strategies": {
+    "spacing": {
+      "section_padding": "py-24 md:py-32",
+      "container_padding": "px-6 md:px-12",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grid_system": {
+      "bento_features": "grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]",
+      "hero_split": "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+    },
+    "containers": {
+      "max_width": "max-w-7xl mx-auto"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-6 text-base font-semibold transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]",
+      "secondary": "rounded-full px-8 py-6 text-base font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+    },
+    "cards": {
+      "feature": "group relative overflow-hidden rounded-3xl border border-emerald-100 bg-white/50 p-8 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 backdrop-blur-sm",
+      "service": "rounded-2xl border-none bg-slate-50 p-10 hover:bg-white hover:shadow-2xl transition-all duration-500 group"
+    },
+    "inputs": {
+      "style": "h-14 rounded-xl border-slate-200 bg-white px-4 text-slate-900 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-sm",
+    "textures": "Use subtle noise overlay on dark sections: bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20",
+    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+    "borders": "border border-emerald-900/5"
+  },
+  "image_urls": {
+    "hero_bg": "https://images.pexels.com/photos/9229394/pexels-photo-9229394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "about_team": "https://images.unsplash.com/photo-1752859674878-0dfa5637c910?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "service_trading": "https://images.unsplash.com/photo-1766802981801-4b4a9a1d8f1c?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "service_grid": "https://images.unsplash.com/photo-1719723756213-22de6e52ccd1?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "feature_ai": "https://images.unsplash.com/photo-1639422026989-c17351e8c71e?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "instructions_to_main_agent": [
+    "1. Setup: Install 'lucide-react', 'framer-motion', 'clsx', 'tailwind-merge'.",
+    "2. Theme: Apply the light theme variables in 'index.css' but ensure 'App.css' does not override layout.",
+    "3. Hero: Use the Solar Farm image as a full-width background with a heavy dark overlay (bg-black/40) to ensure white text pops.",
+    "4. Navigation: Floating glass navbar. Sticky on scroll.",
+    "5. Forms: Contact form must be functional in layout (no backend) but visually perfect.",
+    "6. Motion: Use framer-motion for staggering entrance of service cards.",
+    "7. Footer: Massive footer with dark background (Deep Forest color) and large typography."
+  ],
+  "UNIVERSAL_GUIDELINES": [
+    "Use 2-3x more spacing than feels comfortable.",
+    "Never use pure black (#000000). Use #022c22 (Deep Forest) as the darkest shade.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Do not use generic 'Inter' for headings. Use 'Outfit' or 'Manrope'.",
+    "Avoid gradients on text unless it's a very subtle shine effect."
+  ]
+}
