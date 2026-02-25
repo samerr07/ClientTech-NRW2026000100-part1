@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-lime-400 flex items-center justify-center shadow-lg">
               <Zap className="w-6 h-6 text-white" />
             </div>
-            <span className="font-bold text-xl text-emerald-950 tracking-tight">
+            <span className={`font-bold text-xl tracking-tight transition-colors ${isScrolled ? 'text-emerald-950' : 'text-white'}`}>
               Renergizr
             </span>
           </Link>
