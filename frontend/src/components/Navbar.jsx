@@ -86,7 +86,9 @@ const Navbar = () => {
           <button
             data-testid="mobile-menu-toggle"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors ${isScrolled ? 'hover:bg-emerald-50' : 'hover:bg-white/10'}`}
+            className={`md:hidden p-3 rounded-lg transition-colors z-50 relative ${isScrolled ? 'hover:bg-emerald-50' : 'hover:bg-white/10'}`}
+            aria-label="Toggle mobile menu"
+            type="button"
           >
             {isMobileMenuOpen ? (
               <X className={`w-6 h-6 ${isScrolled ? 'text-emerald-950' : 'text-white'}`} />
