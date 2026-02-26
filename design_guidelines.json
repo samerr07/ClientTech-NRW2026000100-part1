@@ -1,115 +1,164 @@
 {
   "identity": {
-    "name": "Renergizr Industries Private Limited",
-    "tone": "Professional, Sustainable, High-Tech, Trusted",
-    "aesthetic": "Clean Energy Future",
-    "archetype": "Organic & Earthy + Swiss Precision",
-    "theme_preference": "Light Mode with Deep Contrast Sections"
+    "name": "Renergizr Industries",
+    "persona": "The Trusted Energy Architect",
+    "tone": "Professional, Reliable, Forward-Thinking, Institutional",
+    "description": "A redesign focusing on corporate trust, similar to IEX India and GMR. Moving away from generic startup vibes to established industry authority."
   },
   "typography": {
-    "font_family_heading": "Outfit, sans-serif",
-    "font_family_body": "Inter, sans-serif",
+    "font_family_heading": "Manrope",
+    "font_family_body": "IBM Plex Sans",
     "scale": {
-      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
-      "h2": "text-3xl md:text-5xl font-semibold tracking-tight",
-      "h3": "text-2xl md:text-3xl font-medium",
-      "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
-      "caption": "text-sm uppercase tracking-widest font-semibold text-primary/80"
+      "h1": "text-5xl md:text-6xl font-bold tracking-tight",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold",
+      "body": "text-base md:text-lg leading-relaxed text-slate-600",
+      "caption": "text-sm font-medium tracking-wide uppercase text-slate-500",
+      "nav": "text-sm font-semibold tracking-tight text-slate-700"
     },
-    "installation": "Import from Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;700;900&display=swap');"
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap');"
+    ]
   },
   "colors": {
     "palette": {
-      "primary": {
-        "name": "Deep Forest",
-        "hex": "#022c22",
-        "tailwind": "bg-emerald-950",
-        "usage": "Strong backgrounds, primary text, heavy emphasis"
-      },
-      "secondary": {
-        "name": "Electric Leaf",
-        "hex": "#10b981",
-        "tailwind": "bg-emerald-500",
-        "usage": "CTAs, highlights, active states"
-      },
-      "accent": {
-        "name": "Volt",
-        "hex": "#a3e635",
-        "tailwind": "bg-lime-400",
-        "usage": "Micro-interactions, energy pulses, gradients"
-      },
-      "background": {
-        "name": "Mist",
-        "hex": "#f8fafc",
-        "tailwind": "bg-slate-50",
-        "usage": "Main background"
-      },
-      "surface": {
-        "name": "Pure White",
-        "hex": "#ffffff",
-        "tailwind": "bg-white",
-        "usage": "Cards, panels, inputs"
-      }
+      "primary": "#0F172A", 
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#10B981",
+      "secondary_foreground": "#FFFFFF",
+      "accent": "#F59E0B",
+      "accent_foreground": "#0F172A",
+      "background": "#F8FAFC",
+      "foreground": "#0F172A",
+      "muted": "#F1F5F9",
+      "muted_foreground": "#64748B",
+      "border": "#E2E8F0",
+      "card": "#FFFFFF",
+      "card_foreground": "#0F172A"
     },
-    "gradients": {
-      "hero": "bg-gradient-to-br from-emerald-950 via-teal-900 to-slate-900",
-      "card_hover": "hover:bg-gradient-to-tr hover:from-white hover:to-emerald-50/50"
-    }
-  },
-  "layout_strategies": {
-    "spacing": {
-      "section_padding": "py-24 md:py-32",
-      "container_padding": "px-6 md:px-12",
-      "element_gap": "gap-8 md:gap-12"
-    },
-    "grid_system": {
-      "bento_features": "grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]",
-      "hero_split": "grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-    },
-    "containers": {
-      "max_width": "max-w-7xl mx-auto"
-    }
-  },
-  "components": {
-    "buttons": {
-      "primary": "rounded-full px-8 py-6 text-base font-semibold transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.3)]",
-      "secondary": "rounded-full px-8 py-6 text-base font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground"
-    },
-    "cards": {
-      "feature": "group relative overflow-hidden rounded-3xl border border-emerald-100 bg-white/50 p-8 hover:border-emerald-300 hover:shadow-xl transition-all duration-300 backdrop-blur-sm",
-      "service": "rounded-2xl border-none bg-slate-50 p-10 hover:bg-white hover:shadow-2xl transition-all duration-500 group"
-    },
-    "inputs": {
-      "style": "h-14 rounded-xl border-slate-200 bg-white px-4 text-slate-900 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+    "usage": {
+      "primary": "Main headers, Footer, Primary Buttons, Strong Text",
+      "secondary": "Success states, Renewable energy indicators, Sustainability icons",
+      "accent": "Call to Actions (CTAs), Key data points, Hover states",
+      "background": "Page background (Light Slate)",
+      "muted": "Section backgrounds for contrast"
     }
   },
   "visual_enhancers": {
-    "glassmorphism": "backdrop-blur-xl bg-white/70 border border-white/20 shadow-sm",
-    "textures": "Use subtle noise overlay on dark sections: bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20",
-    "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
-    "borders": "border border-emerald-900/5"
+    "shadows": {
+      "card": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      "card_hover": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05)",
+      "floating": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+    },
+    "borders": {
+      "subtle": "1px solid #E2E8F0",
+      "highlight": "1px solid #10B981",
+      "radius": "rounded-none md:rounded-sm" 
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")",
+      "grid": "linear-gradient(#E2E8F0 1px, transparent 1px), linear-gradient(90deg, #E2E8F0 1px, transparent 1px)"
+    }
+  },
+  "layout_strategies": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_spacing": "py-20 md:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-3 gap-8",
+    "grid_swiss": "grid grid-cols-1 md:grid-cols-12 gap-6",
+    "alignment": "Left-aligned mostly, Center only for brief Hero introductions"
+  },
+  "components": {
+    "Hero": {
+      "style": "Split layout or Full width with dark overlay. High impact typography.",
+      "content": "Tagline: 'Empowering Energy Markets'. Metrics ticker at bottom.",
+      "motion": "Fade up text, Parallax background"
+    },
+    "NewsTicker": {
+      "style": "Slim bar, dark background (#0F172A), white text, slow scrolling.",
+      "location": "Top of page or below Hero",
+      "library": "react-fast-marquee"
+    },
+    "ServiceCard": {
+      "style": "White bg, slight shadow, top colored border (Green/Blue). No full border.",
+      "interaction": "Lift on hover, icon color change."
+    },
+    "StatsRow": {
+      "style": "High contrast, big numbers (Manrope Bold), labeled neatly.",
+      "bg": "bg-slate-900 text-white"
+    },
+    "Timeline": {
+      "style": "Vertical line left, cards on right. Clean typography for years."
+    }
   },
   "image_urls": {
-    "hero_bg": "https://images.pexels.com/photos/9229394/pexels-photo-9229394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "about_team": "https://images.unsplash.com/photo-1752859674878-0dfa5637c910?crop=entropy&cs=srgb&fm=jpg&q=85",
-    "service_trading": "https://images.unsplash.com/photo-1766802981801-4b4a9a1d8f1c?crop=entropy&cs=srgb&fm=jpg&q=85",
-    "service_grid": "https://images.unsplash.com/photo-1719723756213-22de6e52ccd1?crop=entropy&cs=srgb&fm=jpg&q=85",
-    "feature_ai": "https://images.unsplash.com/photo-1639422026989-c17351e8c71e?crop=entropy&cs=srgb&fm=jpg&q=85"
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1768839722571-c45c96186dee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxoaWdoJTIwdm9sdGFnZSUyMGVsZWN0cmljJTIwdHJhbnNtaXNzaW9uJTIwbGluZXMlMjBpbmR1c3RyaWFsfGVufDB8fHx8MTc3MjEyNjcyOXww&ixlib=rb-4.1.0&q=85",
+        "category": "hero_background",
+        "description": "High voltage transmission lines, industrial feel"
+      },
+      {
+         "url": "https://images.unsplash.com/photo-1686475577092-285cd688e55a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwzfHxyZW5ld2FibGUlMjBlbmVyZ3klMjB3aW5kJTIwc29sYXIlMjBpbmR1c3RyaWFsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzcyMTI2NzEyfDA&ixlib=rb-4.1.0&q=85",
+         "category": "hero_alternate",
+         "description": "Windmills on hill, clean energy"
+      }
+    ],
+    "about": [
+      {
+        "url": "https://images.unsplash.com/photo-1758599543129-5269a8f29e68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHw0fHxjb3Jwb3JhdGUlMjBoYW5kc2hha2UlMjBidXNpbmVzcyUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcyMTI2NzMwfDA&ixlib=rb-4.1.0&q=85",
+        "category": "trust_handshake",
+        "description": "Corporate handshake outside building"
+      }
+    ],
+    "services": [
+       {
+        "url": "https://images.unsplash.com/photo-1768120234482-12c6450dcf4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxoaWdoJTIwdm9sdGFnZSUyMGVsZWN0cmljJTIwdHJhbnNtaXNzaW9uJTIwbGluZXMlMjBpbmR1c3RyaWFsfGVufDB8fHx8MTc3MjEyNjcyOXww&ixlib=rb-4.1.0&q=85",
+        "category": "infrastructure",
+        "description": "Transmission tower"
+       },
+       {
+        "url": "https://images.unsplash.com/photo-1639422026989-c17351e8c71e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwyfHxyZW5ld2FibGUlMjBlbmVyZ3klMjB3aW5kJTIwc29sYXIlMjBpbmR1c3RyaWFsJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzcyMTI2NzEyfDA&ixlib=rb-4.1.0&q=85",
+        "category": "renewables",
+        "description": "Wind turbines sky background"
+       }
+    ],
+    "team": [
+      {
+        "url": "https://images.pexels.com/photos/8353811/pexels-photo-8353811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "team_meeting",
+        "description": "Professional team discussion"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1758520144427-ddb02ac74e9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxjb3Jwb3JhdGUlMjBoYW5kc2hha2UlMjBidXNpbmVzcyUyMG1lZXRpbmclMjBwcm9mZXNzaW9uYWx8ZW58MHx8fHwxNzcyMTI2NzMwfDA&ixlib=rb-4.1.0&q=85",
+        "category": "office_interaction",
+        "description": "Women shaking hands across desk"
+      }
+    ],
+    "contact": [
+      {
+        "url": "https://images.unsplash.com/photo-1684220156989-0c72032b9904?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBlbmVyZ3klMjB0cmFkaW5nJTIwcHJvZmVzc2lvbmFscyUyMG9mZmljZSUyMG1lZXRpbmd8ZW58MHx8fHwxNzcyMTI2NzEwfDA&ixlib=rb-4.1.0&q=85",
+        "category": "office_room",
+        "description": "Conference room"
+      }
+    ]
   },
   "instructions_to_main_agent": [
-    "1. Setup: Install 'lucide-react', 'framer-motion', 'clsx', 'tailwind-merge'.",
-    "2. Theme: Apply the light theme variables in 'index.css' but ensure 'App.css' does not override layout.",
-    "3. Hero: Use the Solar Farm image as a full-width background with a heavy dark overlay (bg-black/40) to ensure white text pops.",
-    "4. Navigation: Floating glass navbar. Sticky on scroll.",
-    "5. Forms: Contact form must be functional in layout (no backend) but visually perfect.",
-    "6. Motion: Use framer-motion for staggering entrance of service cards.",
-    "7. Footer: Massive footer with dark background (Deep Forest color) and large typography."
+    "Install 'react-fast-marquee' for the news ticker.",
+    "Install 'lucide-react' for icons if not present.",
+    "Use 'Manrope' for all Headings (H1-H4) and 'IBM Plex Sans' for body text.",
+    "Create a 'NewsTicker' component that sits at the top or bottom of the Hero.",
+    "The Design MUST be 'Corporate Industrial'. Sharp corners or small radius (rounded-sm). No full rounded buttons.",
+    "Use the dark Navy (#0F172A) for the Footer and Navbar to anchor the design.",
+    "For the 'Products & Services', use a grid layout with cards that have a top-border color (Green or Blue) instead of a full border.",
+    "Ensure the 'About' section has a visual timeline component for the history.",
+    "Contact page must be functional and clean, with the office map and details clearly visible.",
+    "Add 'data-testid' to all interactive elements."
   ],
-  "UNIVERSAL_GUIDELINES": [
-    "Use 2-3x more spacing than feels comfortable.",
-    "Never use pure black (#000000). Use #022c22 (Deep Forest) as the darkest shade.",
-    "Ensure all interactive elements have data-testid attributes.",
-    "Do not use generic 'Inter' for headings. Use 'Outfit' or 'Manrope'.",
-    "Avoid gradients on text unless it's a very subtle shine effect."
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do NOT use gradients for main backgrounds. Use solid colors or subtle noise textures.",
+    "Do NOT use standard 'Inter' font. Use the specified fonts.",
+    "Ensure high contrast for text. Slate-600 for body on white, Slate-900 for headings.",
+    "Spacing is key. Use 'py-20' or 'py-24' for section vertical padding.",
+    "Buttons should be 'font-semibold' and 'uppercase' tracking-wide for a corporate feel."
   ]
 }
